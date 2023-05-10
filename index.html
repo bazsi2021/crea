@@ -19,6 +19,14 @@ input[type=password] {
   border: 2px solid blue;
   border-radius: 4px;
 }
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid blue;
+  border-radius: 4px;
+}
 .button1 {
   background-color: #4CAF50; /* Green */
   border: none;
@@ -74,7 +82,7 @@ body {
 
 
 <p id="demo"></p>
-<input type="password" id="Name" name="Name" placeholder="Login ID">
+<input type="password" id="Name" name="Name" placeholder="Login ID"><input type="checkbox" onclick="hide_show()">Show ID
 <button onclick = "myFunction()" class="button button1" id="btn"> Login </button>
 
 <script>
@@ -82,11 +90,19 @@ function load() {
     let btn = document.getElementById('relodebtn');
         btn.style.display = 'none';
 }
+function hide_show() {
+  var x = document.getElementById("Name");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
 
 function myFunction() {
   let text;
   let value = document.getElementById('Name').value;
-  if (value == "-2HeLLoworLdcaT1." || value == "2789271241941247" || value == "4129481257235891398" || value == "579417249563913219" || value == "871924712984759821" || value == "87248471928478957834" || value == "741281789758634761273682" || value == "69lofasz" || value == "kozod69") {
+  if (value == "-2HeLLoworLdcaT1." || value == "2789271241941247" || value == "4129481257235891398" || value == "579417249563913219" || value == "871924712984759821" || value == "87248471928478957834" || value == "741281789758634761273682" || value == "69lofasz" || value == "közöd69") {
     text = `
     <!DOCTYPE html>
 <!-- saved from url=(0020)https://example.com/ -->
