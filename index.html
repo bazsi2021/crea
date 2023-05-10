@@ -22,16 +22,34 @@ input[type=password] {
   margin: 4px 2px;
   cursor: pointer;
 }
+.button2 {
+  background-color: #3fabef; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
 </style>
 
 <h2>Sulis Jelszavak:</h2>
+<body onload="load()"></body>
 
 
 <p id="demo"></p>
 <input type="password" id="Name" name="Name" placeholder="Login ID">
-<button onclick = "myFunction()" class="button button1"> Login </button>
+<button onclick = "myFunction()" class="button button1" id="btn"> Login </button>
 
 <script>
+function load() {
+    let btn = document.getElementById('relodebtn');
+        btn.style.display = 'none';
+}
+
 function myFunction() {
   let text;
   let value = document.getElementById('Name').value;
@@ -45,7 +63,20 @@ function myFunction() {
     <br/>
     Tutorial Hogy Törd Fel a Bios Jelszavakat:<br/>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/VSGoYVTpfU0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><br/>
+    <button onclick="window.location.href='https://bazsi2021.github.io/crea/';" id="relodebtn" class="button button2">
+    Log Out
+    </button><br/>
     `
+    var x = document.getElementById("Name");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } 
+      else {
+        x.style.display = "none";
+      }
+      let btn = document.getElementById('btn');
+        btn.style.display = 'none';
+    
   } 
   else {
     text = "Accses Denided!";
