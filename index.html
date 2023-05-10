@@ -1,1 +1,33 @@
-a
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Sulis Jelszavak:</h2>
+
+
+<p id="demo"></p>
+<input type="password" id="Name" name="Name" placeholder="Login ID">
+<button onclick = "myFunction()" > Login </button>
+
+<script>
+function myFunction() {
+  let text;
+  let value = document.getElementById('Name').value;
+  if (value == "-2HeLLoworLdcaT1.") {
+    text = `
+    Bios Jelszavak Fujitus Laptopokhoz:<br/>
+    <iframe src="https://onedrive.live.com/embed?cid=D0844B655D3DE4E3&resid=D0844B655D3DE4E3%213447&authkey=ALrjIEw1Gh7nq0Y&em=2" width="402" height="346" frameborder="0" scrolling="no"></iframe><br/>
+    <br/>
+    Egyéb Sulis Kódok/Jelszavak:<br/>
+    <iframe src="https://onedrive.live.com/embed?cid=D0844B655D3DE4E3&resid=D0844B655D3DE4E3%213448&authkey=AN8EZ8Hgjmdkz68&em=2" width="402" height="346" frameborder="0" scrolling="no"></iframe><br/>
+    <br/>
+    Tutorial Hogy Törd Fel a Bios Jelszavakat:<br/>
+    <iframe width="420" height="315" src="https://youtu.be/VSGoYVTpfU0"></iframe><br/>
+    `
+  } 
+  else {
+    text = "Accses Denided!";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
