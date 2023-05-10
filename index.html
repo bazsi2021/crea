@@ -6,6 +6,9 @@
   <title>Creascola Jelszavak</title>
   <link rel="shortcut icon" href="https://bazsi2021.github.io/crea/ico.jpeg">
 </head>
+<div id="myDIV">
+    Login Whit Your ID
+</div>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style type="text/css"> 
 input[type=password] {
@@ -150,6 +153,15 @@ function myFunction() {
       }
       let btn = document.getElementById('btn');
         btn.style.display = 'none';
+        var x = document.getElementById("myDIV");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } 
+        else {
+            x.style.display = "none";
+        }
+        
+
     
   } 
   else {
