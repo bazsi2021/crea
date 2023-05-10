@@ -82,7 +82,7 @@ body {
 
 
 <p id="demo"></p>
-<input type="password" id="Name" name="Name" placeholder="Login ID"><input type="checkbox" onclick="hide_show()">Show ID
+<input type="password" id="Name" name="Name" placeholder="Login ID"><input type="checkbox" onclick="hide_show()" id="222">Show ID</input>
 <button onclick = "myFunction()" class="button button1" id="btn"> Login </button>
 
 <script>
@@ -176,6 +176,8 @@ function myFunction() {
         else {
             x.style.display = "none";
         }
+        let vvv = document.getElementById('222');
+        vvv.style.display = 'none';
         
 
     
