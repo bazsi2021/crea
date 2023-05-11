@@ -114,8 +114,10 @@ body {
 
 
 <p id="demo"></p>
+<div id="333">
 <input type="password" id="Name" name="Name" placeholder="Login ID"><input onclick="hide_show()" type="button" value="Show ID" id="222" class="button6"></input>
 <button onclick = "myFunction()" class="button button1" id="btn"> Login </button>
+</div>
 
 <script>
 function load() {
@@ -141,6 +143,43 @@ function hide_show() {
 function myFunction() {
   let text;
   let value = document.getElementById('Name').value;
+  let usr_name = ""
+  if (value == "-2HeLLoworLdcaT1."){
+        usr_name = "Kókai Balázs";
+  }
+  else if (value == "2789271241941247") {
+    usr_name = "Mikola Iván";
+  }
+  else if (value == "4129481257235891398"){
+    usr_name = "Károly";
+  }
+  else if (value == "579417249563913219"){
+    usr_name = "Deszpot Balázs";
+  }
+  else if (value == "871924712984759821"){
+    usr_name = "Juhász Benjamin";
+  }
+  else if (value == "87248471928478957834"){
+    usr_name = "Reményi Kovács Dávid";
+  }
+  else if (value == "741281789758634761273682"){
+    usr_name = "Kulin Bence";
+  }
+  else if (value == "69lofasz"){
+    usr_name = "Nyers Donált";
+  }
+  else if (value == "közöd69"){
+    usr_name = "Bulut Nagyszeghi Idris";
+  }
+  else if (value == "576489247532746234"){
+    usr_name = "Dénes";
+  }
+  else if (value == "-426-Dora-tanarno.6245"){
+    usr_name = "Lencse Dóra Tanárnő";
+  }
+  else {
+    usr_name = "Unkonwn"
+  }
   if (value == "-2HeLLoworLdcaT1." || value == "2789271241941247" || value == "4129481257235891398" || value == "579417249563913219" || value == "871924712984759821" || value == "87248471928478957834" || value == "741281789758634761273682" || value == "69lofasz" || value == "közöd69" || value == "576489247532746234" || value == "-426-Dora-tanarno.6245") {
     text = `
     <!DOCTYPE html>
@@ -204,9 +243,7 @@ function myFunction() {
     <br/>
     Tutorial Hogy Törd Fel a Bios Jelszavakat:<br/>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/VSGoYVTpfU0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><br/>
-    <button onclick="window.location.href='https://bazsi2021.github.io/crea/';" id="relodebtn" class="button button1">
-    Log Out
-    </button><br/></p>
+    <br/></p>
 </div>
 
 
@@ -221,15 +258,11 @@ function myFunction() {
       }
       let btn = document.getElementById('btn');
         btn.style.display = 'none';
-        var x = document.getElementById("myDIV");
-        if (x.style.display === "none") {
-            x.style.display = "block";
-        } 
-        else {
-            x.style.display = "none";
-        }
+        document.getElementById("myDIV").innerHTML = "<img src='https://bazsi2021.github.io/crea/usr.png'>  <font size='5'>Logged in as: " + usr_name + "</font>" + "   <button onclick='window.location.href='https://bazsi2021.github.io/crea/'; class='button button1'>Log Out</button>";
         let vvv = document.getElementById('222');
         vvv.style.display = 'none';
+        let mm = document.getElementById('333');
+        mm.style.display = "none"
   } 
   else {
     text = "Accses Denided!";
