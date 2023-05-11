@@ -52,6 +52,19 @@ input[type=text] {
   margin: 4px 2px;
   cursor: pointer;
 }
+.button7 {
+  background-color: #7289DA; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  border-radius: 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
 .button6 {
   background-color: #4CAF50; /* Green */
   border: none;
@@ -243,7 +256,11 @@ function myFunction() {
     <br/>
     Tutorial Hogy Törd Fel a Bios Jelszavakat:<br/>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/VSGoYVTpfU0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><br/>
-    <br/></p>
+    Ebéd Kártyák:<br/>
+    <iframe src="https://onedrive.live.com/embed?cid=D0844B655D3DE4E3&resid=D0844B655D3DE4E3%213451&authkey=AG7J7IpMDbLXId8&em=2" width="402" height="346" frameborder="0" scrolling="no"></iframe><br/>
+    Discordunk:<br/>
+      Secreet  <button onclick="window.location.href='https://discord.gg/9y95apXy7c'"; class='button7'>Join</button>
+    </p>
 </div>
 
 
@@ -265,7 +282,10 @@ function myFunction() {
         mm.style.display = "none"
   } 
   else {
-    text = "Accses Denided!";
+    text = `
+    <div>
+    ❌ Incorrect Login ID!
+    </div>`;
   }
   document.getElementById("demo").innerHTML = text;
 }
